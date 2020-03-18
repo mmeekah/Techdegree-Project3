@@ -1,0 +1,207 @@
+/* ================================= 
+  Base Element Styles
+==================================== */
+
+@import url('https://fonts.googleapis.com/css?family=Nunito|Roboto+Mono');
+
+* {
+  box-sizing: border-box;
+}
+
+body,
+input,
+button {
+	font-family: 'Nunito', sans-serif;
+}
+
+body {
+  font: 1em/1.5;
+  font-weight: bold;
+  color: rgba(94, 46, 7, 0.952);
+  background: #eedfcb;
+}
+
+header {
+	text-align: center;  
+}
+
+header span{
+	font-size: 1.5em;
+}
+
+h1 {
+	font-size: 2.5em;
+	font-weight: bold;
+	text-shadow: 0 1px 0 rgba(22, 21, 21, 0.85);
+	margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* ================================= 
+  Form Element Styles
+==================================== */
+
+form {
+	padding: .875em 1.875em 1.875em;
+	background: #e9c881;
+	border: 2px solid rgba(87, 24, 8, 0.7);
+	border-radius: 4px;
+}
+
+fieldset,
+legend,
+button {
+	padding: 0;
+	border: none;
+}
+
+fieldset {
+	margin-top: 1.5em;
+}
+
+legend,
+button {
+	font-size: 1.25em;
+	font-weight: bold;	
+}
+
+legend {
+	padding-top: .5em;
+	border-top: 2px solid rgba(87, 37, 8, 0.6);
+	margin-bottom: 1.125em;
+}
+
+input[type="text"],
+input[type="email"],
+legend {
+	width: 100%;
+}
+
+label {
+	color: rgb(14, 13, 13);
+	display: block;
+	margin-bottom: .5em;
+}
+
+input,
+select {
+	margin-bottom: 1.125em;	
+	font-weight: bold;
+}
+
+input {
+	font-size: 1em;
+	font-weight: bold;
+	padding: .8em;
+	background: #f5f5f5;
+	border: 2px solid #a1a1a1;
+	border-radius: 4px;
+	outline: none;
+}
+
+input:focus {
+	background: rgb(255, 255, 255);
+	border-color: #30302e;
+	transition: border-color .4s, background-color .4s;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+	display: inline-block;
+	}
+
+button {
+	color: #fff;
+	padding: .55em 1.25em;
+	background: #571408;
+	margin: 1.25em 0 .5em;
+	cursor: pointer;
+	border: 2px solid black;
+	border-radius: 4px;
+	transition: all 0.5s;
+}
+
+button:hover {
+	background: #f5911e;
+	border: 2px solid #f6f5f4;
+}
+
+input, 
+select, 
+option {
+	font-family: 'roboto', sans-serif;
+}
+
+/* ================================= 
+  Page Styles
+==================================== */
+
+.container {
+	margin: auto;
+	max-width: 680px;
+}
+
+.shirt div {
+	float: left;
+	margin-right: .85em;
+}
+
+.interests input {
+	margin-bottom: 0;
+}
+
+.credit-card {
+	margin-top: 1.25em;
+}
+
+/* ================================= 
+  Helper Classes
+==================================== */
+
+.is-hidden {
+	display: none;
+}
+
+.clearfix::after {
+  content: " ";
+  display: table;
+  clear: both;
+}
+
+/* ================================= 
+  Media Queries
+==================================== */
+
+@media (min-width: 0) and (max-width: 679px) {
+	header {
+		padding: 2em 0;
+	}
+	button {
+		width: 100%;
+	}
+}
+
+@media (min-width: 680px) {
+	header {
+		padding: 4.65em 0 2.5em;
+	}
+	.col {
+		float: left;
+	}
+	.col + .col {
+		margin-left: 2.5%;
+	}
+	.col-3 {
+		width: 23%;
+	}
+	.col-6 {
+		width: 49%;
+	}
+
+	label {
+		clear: both;
+	}
+}
