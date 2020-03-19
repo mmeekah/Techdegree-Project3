@@ -33,6 +33,10 @@ $(document).ready(function() {
     
   
 
+
+    // set focus on the name input
+    $('#name').focus();
+    
     // hide 'other title' by default
     $('#other-title').hide();
 
